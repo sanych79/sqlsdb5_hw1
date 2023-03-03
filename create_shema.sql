@@ -18,6 +18,7 @@ CREATE TABLE "public.employee" (
 CREATE TABLE "public.Project_Emp" (
 	"project_id" integer NOT NULL,
 	"emp_id" integer NOT NULL
+	PRIMARY KEY(project_id, emp_id)
 ) 
 
 
@@ -74,6 +75,7 @@ CREATE TABLE "public.position" (
 CREATE TABLE "public.pos_emp" (
 	"position_id" integer NOT NULL,
 	"emp_id" integer NOT NULL
+	PRIMARY KEY(position_id, emp_id)
 ) 
 
 
